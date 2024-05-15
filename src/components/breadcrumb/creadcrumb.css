@@ -1,0 +1,37 @@
+.breadcrumbs {
+  padding-left: 45px;
+  padding-right: 45px;
+  padding: 10px 30px;
+  border-bottom: 1px solid #e7e7e7;
+}
+
+.breadcrumbs ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 18px;
+}
+.breadcrumbs ul li {
+  font-size: 13px;
+  font-weight: 400px;
+  line-height: 19px;
+  transition: all 0.3s linear;
+  color: #aaaaaa;
+  cursor: pointer;
+}
+.breadcrumbs ul li:first-child {
+  color: #727272;
+  position: relative;
+  &::after {
+    content: url("../../../public/assets/icons/cheveron-right.svg");
+    color: #aaaaaa;
+    position: absolute;
+    right: -18px;
+    top: 50%;
+    transform: translateY(-43%);
+  }
+}
+
+.breadcrumbs ul li:first-child:hover {
+  color: #007099;
+}

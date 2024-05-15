@@ -1,0 +1,13 @@
+.researchResult {
+  padding: 25px 15px;
+}
+.researchResult h1 {
+  margin-bottom: 30px;
+  font-size: 1.8rem;
+  font-weight: normal;
+  white-space: nowrap;
+  line-height: 2.5rem;
+}
+.researchResult .researchResult-content {
+  padding-top: 20px;
+}

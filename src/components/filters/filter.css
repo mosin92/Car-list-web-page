@@ -1,0 +1,94 @@
+.filters-pc {
+  border-radius: 4px;
+  width: 230px;
+  background-color: #fff;
+  border: 1px solid #e7e7e7;
+  font-size: 1.4rem;
+  position: relative;
+}
+.filter-accordian {
+  border: none !important;
+  box-shadow: none !important;
+}
+.filter-accordian .ant-collapse-header {
+  border-bottom: none !important;
+}
+.filter-accordian .ant-collapse-header {
+  background: #fff !important;
+  border: none !important;
+  box-shadow: none;
+  outline: none !important;
+  flex-direction: row-reverse;
+  height: 50px;
+  align-items: center !important;
+}
+
+.ant-collapse-item-active .ant-collapse-expand-icon svg,
+.ant-collapse-item .ant-collapse-expand-icon svg {
+  display: none !important;
+}
+.ant-collapse-item.ant-collapse-item-active .ant-collapse-expand-icon {
+  height: 20px;
+  width: 20px;
+  background-image: url("../../../public/assets/icons/add.svg");
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+  /* background-size: cover; */
+}
+.ant-collapse-item .ant-collapse-expand-icon {
+  height: 20px;
+  width: 20px;
+  background-image: url("../../../public/assets/icons/ic--round-minus.svg");
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.filter-accordian .ant-collapse-header .ant-collapse-expand-icon {
+  padding-right: 0 !important;
+}
+.ant-collapse-header-text {
+  /* padding: 0 50px 0 15px; */
+  /* height: 50px; */
+  position: relative;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #2d3538;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.filters-pc .filter-box {
+  max-height: 230px;
+  overflow: auto;
+}
+.filters-pc .filter-box::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: #c1c1c1;
+  border: 2px solid #fafafa;
+}
+.filters-pc .filter-box::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background: #fafafa;
+  border: 1px solid #e6e6e6;
+}
+
+.filter-box ul {
+  /* padding: 10px 0 6px 0; */
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.filter-box ul li label {
+  gap: 10px;
+  display: flex;
+  position: relative;
+  font-weight: normal;
+  color: #2d3538;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  line-height: 20px;
+  cursor: pointer;
+  width: fit-content;
+}
