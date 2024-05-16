@@ -6,6 +6,11 @@
   align-items: center;
   padding-right: 10px;
   overflow: hidden;
+  position: relative;
+  margin-bottom: 20px;
+}
+.product-card:first-child {
+  border: 3px solid #44a3ca;
 }
 .product-card .left {
   height: 100%;
@@ -52,4 +57,45 @@
   text-overflow: ellipsis;
   width: 100%;
   text-wrap: nowrap;
+}
+.product-card .right .pricing {
+  display: flex;
+  align-items: flex-end;
+  gap: 1.5rem;
+}
+.product-card .right .pricing h5 {
+  font-size: 2.2rem;
+  letter-spacing: -0.39px;
+  line-height: 2.6rem;
+  margin: 20px 0 0;
+  color: #0a8dd0;
+}
+
+.product-card .right .pricing p {
+  font-size: 1.3rem;
+  color: #0a8dd0;
+  margin-bottom: 2px;
+}
+.product-card .like-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.7;
+  width: 24px;
+}
+.product-card button {
+  position: absolute;
+  bottom: 6px;
+  right: 10px;
+  font-size: 1.4rem;
+  letter-spacing: -0.3px;
+  line-height: 30px;
+  height: 30px;
+  padding: 0 25px;
+  border: 1px solid #4a90e2;
+  color: #4a90e2;
+  background: transparent;
+  cursor: pointer;
 }
