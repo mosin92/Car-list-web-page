@@ -1,6 +1,11 @@
 "use client";
 import React from "react";
 import "./footer.css";
+import Image from "next/image";
+import facebook from "../../../public/assets/icons/facebook.svg";
+import twitter from "../../../public/assets/icons/twitter.svg";
+import pinterest from "../../../public/assets/icons/pinterest.svg";
+import feed from "../../../public/assets/icons/feed.svg";
 const Footer = () => {
   const items = [
     {
@@ -83,7 +88,7 @@ const Footer = () => {
   return (
     <>
       <footer>
-        <div className="footer-top container-wrapper">
+        <div className="footer-wrapper container-wrapper">
           <h1>Votre véhicule se trouve peut-être ici !</h1>
           <p>Retrouvez nos sélections de véhicules d'occasion à vendre</p>
 
@@ -101,6 +106,44 @@ const Footer = () => {
             Pour les trajets courts, privilégiez la marche ou le vélo
             #SeDeplacerMoinsPolluer
           </p>
+        </div>
+        <div className="footer-bottom">
+          <div className="footer-wrapper container-wrapper">
+            <div className="links-wrapper">
+              <h2>Ouestfrance-auto.com</h2>
+              <div className="links">
+                <div>
+                  <a href="#">Contact - FAQ</a>
+                  <span>|</span>
+                  <a href="#">Plan du site</a>
+                  <span>|</span>
+                  <a href="#">CGU</a>
+                </div>
+                <div>
+                  <a href="#">CGUProtection des données personnelles</a>-
+                  <a href="#">Mentions légales</a>-
+                  <a href="#">Politique des cookies</a>-
+                  <a href="#">Modifier mes cookies</a>
+                </div>
+              </div>
+            </div>
+            <div className="social-wrapper">
+              <a href="#">
+                <Image src={facebook} alt="facebook" priority />
+              </a>
+              <a href="">
+                <Image src={twitter} alt="facebook" priority />
+              </a>
+
+              <a href="">
+                <Image src={pinterest} alt="facebook" priority />
+              </a>
+
+              <a href="">
+                <Image src={feed} alt="facebook" priority />
+              </a>
+            </div>
+          </div>
         </div>
       </footer>
     </>
