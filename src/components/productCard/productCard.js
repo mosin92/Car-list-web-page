@@ -5,6 +5,7 @@ import Image from "next/image";
 import car1 from "../../../public/assets/images/car.webp";
 import location from "../../../public/assets/images//location.svg";
 import like from "../../../public/assets/icons/heart-2.svg";
+import cam from "../../../public/assets/icons/camera.svg";
 
 const ProductCard = ({ product }) => {
   return (
@@ -12,6 +13,8 @@ const ProductCard = ({ product }) => {
       <div className="product-card ">
         <div className="left">
           <Image src={car1} alt="car1" priority />
+
+          <div className="badge">à la une</div>
         </div>
         <div className="right">
           <h6>
@@ -29,6 +32,10 @@ const ProductCard = ({ product }) => {
         </div>
         <Image src={like} alt="car1" priority className="like-btn" />
         <button>Voir le détail</button>
+        <div className="cam-icon">
+          <Image src={cam} alt="cam" priority />
+          13
+        </div>
       </div>
     </>
   );
