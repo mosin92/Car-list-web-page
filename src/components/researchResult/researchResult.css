@@ -1,5 +1,5 @@
 .researchResult {
-  padding: 25px 15px;
+  padding: 25px 20px;
 }
 .researchResult h1 {
   margin-bottom: 30px;
@@ -10,4 +10,9 @@
 }
 .researchResult .researchResult-content {
   padding-top: 20px;
+  display: flex;
+  gap: 23px;
+}
+.researchResult .researchResult-content .results {
+  width: calc(100% - 240px);
 }

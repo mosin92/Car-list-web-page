@@ -2,6 +2,8 @@
 import React from "react";
 import "./researchResult.css";
 import Filter from "../filters/filter";
+import ResultHeader from "../resultHead/resultHeader";
+import ProductCard from "../productCard/productCard";
 const ResearchResult = () => {
   return (
     <>
@@ -10,6 +12,10 @@ const ResearchResult = () => {
           <h1>Ocasion Voitures</h1>
           <div className="researchResult-content">
             <Filter />
+            <div className="results">
+              <ResultHeader />
+              <ProductCard />
+            </div>
           </div>
         </div>
       </div>

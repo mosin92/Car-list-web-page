@@ -1,0 +1,55 @@
+.product-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  padding-right: 10px;
+  overflow: hidden;
+}
+.product-card .left {
+  height: 100%;
+  width: 180px;
+  height: 140px;
+  margin-right: 20px;
+}
+.product-card .left img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.product-card .right {
+  width: calc(100% - 200px);
+}
+.product-card .right h6 {
+  font-weight: 700;
+  font-size: 1.8rem;
+  line-height: 190%;
+  color: #2d3538;
+}
+.product-card .right h6 span {
+  font-size: 1.4rem;
+  font-weight: normal;
+}
+.product-card .right label {
+  color: #908e8e;
+  font-weight: 700;
+  font-size: 1.4rem;
+  display: flex;
+  align-items: center;
+}
+.product-card .right label img {
+  width: 16px !important;
+  opacity: 0.7;
+}
+.product-card .right .discription {
+  font-size: 1.3rem;
+  line-height: 1.9rem;
+  color: #908e8e;
+  line-height: 1.6rem;
+  letter-spacing: -0.35px;
+  overflow: hidden; /* Hide overflow text */
+  text-overflow: ellipsis;
+  width: 100%;
+  text-wrap: nowrap;
+}

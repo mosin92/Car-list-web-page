@@ -1,0 +1,71 @@
+.result-header {
+  padding: 10px 20px;
+  border-radius: 2px;
+  background-color: inherit;
+  border: 1px solid #e7e7e7;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.result-header .left {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 700;
+  gap: 20px;
+}
+
+.result-header .left span {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #da6320;
+  font-size: 14px;
+}
+.result-header .left span .icon {
+  width: 35px;
+  height: 35px;
+  background-color: #feea7e;
+  border-radius: 100%;
+  border: 1px solid #fdde84;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 5px;
+}
+.result-header .right {
+  display: flex;
+  align-items: center;
+}
+.result-header .right label {
+  font-weight: 700;
+  font-size: 14px;
+  color: #727272;
+}
+.result-header .right .toggle-btn {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-right: 30px;
+}
+
+.result-header .right .drop-down-wrapper {
+  font-size: 14px;
+  color: #727272;
+  font-weight: normal;
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.ant-select-selector {
+  border-radius: 0;
+}
+
+.ant-select-selector .ant-select-selection-item {
+  font-size: 14px !important;
+  color: #727272 !important;
+  opacity: 1 !important;
+}
