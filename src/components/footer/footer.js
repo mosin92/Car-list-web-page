@@ -8,7 +8,7 @@ import pinterest from "../../../public/assets/icons/pinterest.svg";
 import car from "../../../public/assets/icons/car.svg";
 import feed from "../../../public/assets/icons/feed.svg";
 import search from "../../../public/assets/icons/search.svg";
-import { Select } from "antd";
+import down from "../../../public/assets/icons/down.svg";
 const Footer = () => {
   const items = [
     {
@@ -88,15 +88,13 @@ const Footer = () => {
       link: "#",
     },
   ];
-  //   const handleChange = (value) => {
-  //     console.log(`selected ${value}`);
-  //   };
+
   return (
     <>
       <footer>
         <div className="footer-wrapper container-wrapper">
           <h1>Votre véhicule se trouve peut-être ici !</h1>
-          <p>Retrouvez nos sélections de véhicules d'occasion à vendre</p>
+          <p>{`Retrouvez nos sélections de véhicules d'occasion à vendre`}</p>
 
           <div className="car-links">
             {items.map((item, index) => (
@@ -117,6 +115,13 @@ const Footer = () => {
           <div className="footer-search-wrapper">
             <div className="drop-wrapper">
               <Image src={car} alt="car" width={24} priority />
+              <Image src={down} alt="car" width={14} priority />
+
+              {/* <div className="drop-content">
+                <Image src={car} alt="car" width={24} priority />
+                <Image src={car} alt="car" width={24} priority />
+                <Image src={car} alt="car" width={24} priority />
+              </div> */}
             </div>
             <input type="text" placeholder="Quelle voiture recherchez-vous ?" />
             <button>
