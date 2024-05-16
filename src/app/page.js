@@ -3,6 +3,7 @@ import styles from "./page.module.css";
 import Navbar from "@/components/navbar/navbar";
 import Breadcrumb from "@/components/breadcrumb/breadcrumb";
 import ResearchResult from "@/components/researchResult/researchResult";
+import Footer from "@/components/footer/footer";
 
 export default function Home() {
   return (
@@ -97,6 +98,7 @@ export default function Home() {
       <Navbar />
       <Breadcrumb />
       <ResearchResult />
+      <Footer />
     </main>
   );
 }

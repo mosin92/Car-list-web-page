@@ -12,7 +12,7 @@ const ProductCard = ({ product }) => {
     <>
       <div className="product-card ">
         <div className="left">
-          <Image src={car1} alt="car1" priority />
+          <Image src={product?.image} alt="car1" priority />
 
           <div className="badge">à la une</div>
         </div>

@@ -14,5 +14,15 @@
   gap: 23px;
 }
 .researchResult .researchResult-content .results {
-  width: calc(100% - 240px);
+  width: calc(100% - 250px);
+}
+
+.researchResult .credit-label {
+  display: block;
+  text-align: center;
+  font-weight: bold;
+  padding: 10px;
+  line-height: 1.42857;
+  color: #727272;
+  font-size: 1.6rem;
 }

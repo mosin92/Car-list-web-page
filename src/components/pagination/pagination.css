@@ -1,0 +1,25 @@
+.pagination {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 5px;
+}
+.pagination button {
+  position: relative;
+  float: left;
+  padding: 6px 10px;
+  line-height: 1.42857;
+  text-decoration: none;
+  color: inherit;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  margin: 0 5px 5px 0;
+  font-size: 1.6rem;
+  cursor: pointer;
+}
+
+.pagination button.active-paginate {
+  font-weight: bold;
+  background-color: #f6f6f6;
+  color: #0a8dd0;
+}
