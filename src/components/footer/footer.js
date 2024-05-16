@@ -5,7 +5,10 @@ import Image from "next/image";
 import facebook from "../../../public/assets/icons/facebook.svg";
 import twitter from "../../../public/assets/icons/twitter.svg";
 import pinterest from "../../../public/assets/icons/pinterest.svg";
+import car from "../../../public/assets/icons/car.svg";
 import feed from "../../../public/assets/icons/feed.svg";
+import search from "../../../public/assets/icons/search.svg";
+import { Select } from "antd";
 const Footer = () => {
   const items = [
     {
@@ -85,6 +88,9 @@ const Footer = () => {
       link: "#",
     },
   ];
+  //   const handleChange = (value) => {
+  //     console.log(`selected ${value}`);
+  //   };
   return (
     <>
       <footer>
@@ -106,6 +112,18 @@ const Footer = () => {
             Pour les trajets courts, privilégiez la marche ou le vélo
             #SeDeplacerMoinsPolluer
           </p>
+        </div>
+        <div className="footer-search container-wrapper">
+          <div className="footer-search-wrapper">
+            <div className="drop-wrapper">
+              <Image src={car} alt="car" width={24} priority />
+            </div>
+            <input type="text" />
+            <button>
+              <Image src={search} alt="car" width={24} priority />
+              Rechercher
+            </button>
+          </div>
         </div>
         <div className="footer-bottom">
           <div className="footer-wrapper container-wrapper">

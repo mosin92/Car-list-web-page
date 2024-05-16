@@ -96,3 +96,28 @@ footer .footer-strip {
   line-height: 32px;
   font-size: 1.6rem;
 }
+
+.footer-search.container-wrapper {
+  padding: 0 20px;
+}
+.footer-search-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #ccc;
+  height: 40px;
+  border-radius: 4px;
+}
+
+.footer-search-wrapper .drop-wrapper {
+  position: relative;
+  width: 60px;
+  border-right: 1px solid #ccc;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.footer-search-wrapper input {
+  width: 100%;
+}
