@@ -118,9 +118,9 @@ const Footer = () => {
             <div className="drop-wrapper">
               <Image src={car} alt="car" width={24} priority />
             </div>
-            <input type="text" />
+            <input type="text" placeholder="Quelle voiture recherchez-vous ?" />
             <button>
-              <Image src={search} alt="car" width={24} priority />
+              <Image src={search} alt="car" width={16} priority />
               Rechercher
             </button>
           </div>
