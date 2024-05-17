@@ -88,6 +88,18 @@ header .right {
   gap: 12px;
   padding-right: 16px;
 }
+header .right div:first-child {
+  position: relative;
+}
+header .right div:first-child::after {
+  content: "";
+  position: absolute;
+  right: -5px;
+  top: -8px;
+  width: 1px;
+  height: 45px;
+  background-color: #dcdcdc;
+}
 header .right div:last-child {
   display: flex;
   gap: 12px;

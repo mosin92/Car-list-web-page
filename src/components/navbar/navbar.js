@@ -1,5 +1,5 @@
 import React from "react";
-import style from "./navbar.css";
+import "./navbar.css";
 import logo from "../../../public/assets/images/logo.gif";
 import menuImg from "../../../public/assets/icons/menu.svg";
 import close from "../../../public/assets/icons/close.svg";
